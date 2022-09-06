@@ -64,10 +64,6 @@ function renderHTML(data){
 
     for (i = 0 ; i <data.length; i++) {
         htmlString += "<div class=\"main-product-card\"><div class=\"main-product-image\"><img src=\"/images/"+data[i].images+"\"  alt=\"product\"></div><p class=\"main-product-short-description\">"+data[i].description+"</p><p class=\"price\">$ "+ data[i].price + "</p> <div class=\"overlay\"><div class=\"cart-button\"><img src=\"/images/plus.jpg\" alt=\"plus\"></div><div class=\"favourite-button\"><img src=\"/images/red-heart.jpg\" alt=\"heart\"></div></div></div>"
-        
-        
-        "<p>" + data [i].name + "\" is a" +data[i].species+ ".</p>";
-    
     
     }
 
