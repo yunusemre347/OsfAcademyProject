@@ -1,0 +1,132 @@
+  /* ---featured start---*/
+  
+  .product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgb(36, 40, 45);
+   
+    display: flex;
+    justify-content: center;
+  }
+  
+ 
+  .product-container {
+    max-width: 1340px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 55px;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 295px;
+    height: 365px;
+    margin-right: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  
+  .product-card a{
+    padding: 0px; 
+   
+  }
+  
+  .product-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 295px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  
+  .product-short-description{
+    font-size: 16px;
+    text-align: center;
+  }
+  .awesome-link {
+    margin-left: 100px;
+    color: #84bc22;
+  
+  }
+  
+  
+  .product-headline{
+  background-color: rgb(36, 40, 45);
+  color: #ffffff;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+  
+  }
+  .product-headline h2 {
+    color: #ffffff;
+    font-size: 40px;
+  }
+  
+  .product-arrows {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(36, 40, 45);
+    
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   
+  }
+  .slashes{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2.5px;
+    color: #fff;
+   
+  }
+
+  .line {
+    width: 15%;
+    height: 2px;
+    background-color: #ffffff; 
+    margin: 5px;
+   
+  }
+  
+  .pre-btn, .nxt-btn {
+    border: none;
+    background-color: rgb(36, 40, 45);
+    cursor: pointer;
+  }
+  .pre-btn {
+    left: 30%;
+  }
+  .nxt-btn {
+    right: 30%;
+  }
+  
+  
+  
+  .pre-btn img , .nxt-btn img {
+    opacity: 0.8;
+  
+  }
+  
+  .pre-btn:hover img , .nxt-btn:hover img {
+    opacity: 1;
+  
+  }
+  
+  
+  /*---featured end ---*/
