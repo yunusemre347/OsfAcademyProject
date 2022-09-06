@@ -1,26 +1,22 @@
 [
     {
-      "name": "Whiskers",
-      "species" : "cat",
-      "foods": {
-        "likes": ["celery", "strawberries"],
-        "dislikes": ["carrots"]
-      }
+      "images": "product9.jpg",
+      "description": "EAMES x Cast + Crew - Pustom Powder Coated ",
+      "price": "347.34"
     },
     {
-      "name": "Woof",
-      "species" : "dog",
-      "foods": {
-        "likes": ["dog food"],
-        "dislikes": ["cat food"]
-      }
+      "images": "product10.jpg",
+      "description": " Emre Loves Tampa Calender",
+      "price": "347.34"
     },
     {
-      "name": "Fluffy",
-      "species" : "cat",
-      "foods": {
-        "likes": ["canned food"],
-        "dislikes": ["dry food"]
-      }
+      "images": "product11.jpg",
+      "description": "TORY DESK CALENDAR",
+      "price": "656.14"
+    },
+    {
+      "images": "product12.jpg",
+      "description": "CH445 Wing Chair on SUıte NY",
+      "price": "330.51"
     }
   ]

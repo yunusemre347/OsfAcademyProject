@@ -49,7 +49,7 @@ let pageCounter =1;
 
 btn.addEventListener("click",function() {
     let ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-2.json');
+    ourRequest.open('GET','https://yunusemre347.github.io/osfjson/db.json');
     ourRequest.onload = function() {
         let ourData = JSON.parse(ourRequest.responseText)
         renderHTML(ourData);
@@ -63,7 +63,12 @@ function renderHTML(data){
     let htmlString = "";
 
     for (i = 0 ; i <data.length; i++) {
-        htmlString += "<p>" + data [i].name + " is a" +data[i].species+ ".</p>";
+        htmlString += "<div class=\"main-product-card\"><div class=\"main-product-image\"><img src=\"/images/"+data[i].images+"\"  alt=\"product\"></div><p class=\"main-product-short-description\">"+data[i].description+"</p><p class=\"price\">$ "+ data[i].price + "</p> <div class=\"overlay\"><div class=\"cart-button\"><img src=\"/images/plus.jpg\" alt=\"plus\"></div><div class=\"favourite-button\"><img src=\"/images/red-heart.jpg\" alt=\"heart\"></div></div></div>"
+        
+        
+        "<p>" + data [i].name + "\" is a" +data[i].species+ ".</p>";
+    
+    
     }
 
     loadMoreContainer.insertAdjacentHTML('beforeend',htmlString)
@@ -75,3 +80,4 @@ function renderHTML(data){
     
 
 }
+
