@@ -77,3 +77,29 @@ function renderHTML(data){
 
 }
 
+
+let favCountBtn = document.querySelectorAll(".favourite-button");
+let favCountNum = document.getElementById("favourites");
+
+for (let i =0; i<favCountBtn.length;i++) {
+
+    favCountBtn[i].addEventListener('click',favCountUp);
+}
+
+function favCountUp () {
+    favCountNum.innerHTML ++ ;
+}
+
+
+let cartCountBtn = document.querySelectorAll(".cart-button");
+let cartCountNum = document.getElementById("cart");
+
+for (let i =0; i<cartCountBtn.length;i++) {
+
+    cartCountBtn[i].addEventListener('click',cartCountUp);
+}
+
+function cartCountUp () {
+    cartCountNum.innerHTML ++ ;
+}
+

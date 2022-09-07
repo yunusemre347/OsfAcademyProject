@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osf Academy Project</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/category-landing-page.css" />
   </head>
   <body>
     <header>
@@ -102,6 +102,7 @@
               <option value="1">€ Euro</option>
               <option value="3">£ GBP</option>
               <option value="2">JPY</option>
+            
             </select>
           </div>
         </ul>
@@ -146,80 +147,83 @@
      
     </header>
     <hr>
-    <section class="greeting">
-      <!--slider start-->
-      <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <input type="radio" name="radio-btn" id="radio5">
-           <!--radio buttons end-->
-           <!--slide images start-->
-           <div class="slide first">
-            <img src="images/slider1.jpg" alt="">
-            <div class="slider-text">
-            <h3>Control and manage any <br> device with cloud solutions</h3>
-            <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-            <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
-          </div>
-           
-           </div>
-           <div class="slide ">
-            <img src="images/slider2.jpg" alt="">
-            <div class="slider-text">
-            <h3>Control and manage any <br> device with cloud solutions</h3>
-            <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-            <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
-          </div>
-           </div>
-           <div class="slide ">
-            <img src="images/slider3.jpg" alt="">
-            <div class="slider-text">
-            <h3>Control and manage any <br> device with cloud solutions</h3>
-            <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-            <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
-          </div>
-           </div>
-           <div class="slide ">
-            <img src="images/slider1.jpg" alt="">
-            <div class="slider-text">
-            <h3>Control and manage any <br> device with cloud solutions</h3>
-            <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-            <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
-          </div>
-           </div>
-           <div class="slide ">
-            <img src="images/slider2.jpg" alt="">
-            <div class="slider-text">
-            <h3>Control and manage any <br> device with cloud solutions</h3>
-            <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
-            <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
-          </div>
-           </div>
-           <!--slide images end-->
-           <!--manual navigation start-->
-           <div class="navigation-manual">
-            <label for="radio1" class="manual-btn" id="mnl-btn1" ></label>
-            <label for="radio2" class="manual-btn" id="mnl-btn2" ></label>
-            <label for="radio3" class="manual-btn" id="mnl-btn3" ></label>
-            <label for="radio4" class="manual-btn" id="mnl-btn4" ></label>
-            <label for="radio5" class="manual-btn" id="mnl-btn5" ></label>
-          </div>
-
-            <!--manual navigation end-->
-
+    
+    <section class="category-landing-page"> 
+        <div class="wrapper">
+            <a href="/index.html">Home</a> <span>/</span> <span>Category Landing</span>
+            <h2>Services</h2>
+            <div class="container">
+                <div class="category-container">
+                <span>Price</span>
+                <select class="select" name="category-select" id="">
+                    <option value="0"> 0 - 500</option>
+                    <option value="1"> 500 - 1000</option>
+                    <option value="2"> 1000 - 2000</option>
+                    <option value="2"> 2000 - 4000</option>
+                    <option value="2"> 4000+</option>
+                </select>
+            </div>
+                <div class="category-container">
+                <span>Brands</span>
+                <select class="select" name="category-select" id="">
+                    <option value="0">Ukraine sport</option>
+                    <option value="1">Conders</option>
+                    <option value="2">Pmua</option>
+                    <option value="3">Adiclas</option>
+                    <option value="4">Mike</option>
+                </select>
+            </div>
+                <div class="category-container">
+                <span>Size</span>
+                <select class="select" name="category-select" id="">
+                    <option value="0">small</option>
+                    <option value="1">medium</option>
+                    <option value="2">large</option>
+                    <option value="3">x-large</option>
+                    <option value="4">xxx-large</option>
+                </select>
+            </div>
+                <div class="category-container" >
+                <span>Color</span>
+                <input type="radio" name="color" id="white">
+                <input type="radio" name="color" id="blue">
+                <input type="radio" name="color" id="black">
+                <input type="radio" name="color" id="green">
+                <input type="radio" name="color" id="dark-blue">
+                <input type="radio" name="color" id="orange">
+                <input type="radio" name="color" id="red">
+                <!-- <input type="radio" name="color" id="beige"> -->
+                <label class="color-button" id="color-btn1"  for="white"></label>
+                <label class="color-button" id="color-btn2" for="blue">  </label>
+                <label class="color-button" id="color-btn3" for="black"></label>
+                <label class="color-button" id="color-btn4" for="green"></label>
+                <label class="color-button" id="color-btn5" for="dark-blue"></label>
+                <label class="color-button" id="color-btn6" for="orange"></label>
+                <label class="color-button" id="color-btn7" for="red"></label>
+                <!-- <label class="color-button" id="color-btn8" for="beige"></label> -->
+            </div>
+            <div class="category-container">
+                <span>Sort by</span>
+                <select class="select" name="category-select" id="">
+                    <option value="0">Price</option>
+                    <option value="1">Made</option>
+                    <option value="2">Year</option>
+                    <option value="3">Style</option>
+                    <option value="4">Age</option>
+                </select>
+            </div>
+                <div class="category-container">
+                <span>Show</span>
+                <select class="select" name="category-select" id="">
+                    <option value="0">16 per page</option>
+                    <option value="1">34 per page</option>
+                    <option value="2">60 per page</option>
+                </select>
+            </div>
+                
+            </div>
         </div>
-      </div>
-       <!--slider end-->
-      <div class="secondary">
-        <img src="images/discount-banner.jpg" alt="summer sales %50">
-        <h4>Follow Us On Facebook</h4>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <a href="https://www.facebook.com/OSFDigital/"><button class="facebook-button"><img class="facebook-blue" src="images/facebook-blue.jpg" alt=""> FOLLOW </button></a>
-      </div>
+
     </section>
 
   <section class="main-products-section">
@@ -354,13 +358,9 @@
     <div id="load-more-container">
     <button  id="load-more-btn">load more</button>
    </div>
-  
    </section>
-   
 
-    <div class="banner-image">
-      <img class="banner" src="images/banner.jpg" alt="">
-    </div>
+    
 <!--   featured products  start-->
 
 <div class="product-headline">
@@ -485,39 +485,12 @@
       </div>
 
     </div>
- 
 </section>
 
 
 <!--   featured products  end-->
    
-    <section class="benefit">
-      <div class="wrapper">
-      <div class="benefit-cards">
-        <img src="images/logistics.jpg" alt="">
-        <div>
-        <h4>FOCUS</h4>
-        <p>
-          Our unwavering focus on superior service delivery and building next generation competencies </p>
-        </div>
-        </div>
-        <div class="benefit-cards">
-          <img src="images/recycle.jpg" alt="">
-          <div>
-          <h4>METHOD</h4>
-        <p>
-          A standardized methodology designed to deliver measurable business results and predictable costs</p>
-        </div>
-        </div>
-        <div class="benefit-cards">
-          <img src="images/checklist.jpg" alt="">
-          <div>
-          <h4>KNOWLEDGE</h4>
-        <p>
-          A highly skilled, proactive workforce that reliably improves each client’s ROI while mitigating their business risk</p>
-        </div>
-        </div>
-      </section>
+  
   </div>
     <!--footer start-->
     <footer class="footer">
