@@ -4,7 +4,399 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="/css/product-detailed-page.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+     <a class="logo-link" href="index.html"><img class="logo" src="/images/logo.jpg" alt="company logo" /> </a> 
+      <div class="container">
+        <h1>OSF</h1>
+        <h2>Academy</h2>
+      </div>
+        
+      <nav>
+        <ul class="header-list">
+          <li>
+            <a class="header-nav" href="">SERVICES&nbsp▼</a>
+            <ul class="dropdown">
+
+              <!----->         
+              <div class="wrapper">
+                <div class="row">
+                  <div class="dropdown-col">
+                    <h4> PRODUCT CATEGORIES</h4>
+                    <ul>
+                      <li><a href="./404.html">Accessories</a></li>
+                      <li><a href="./404.html">Alcohol</a></li>
+                      <li><a href="./404.html">Art</a></li>
+                      <li><a href="./404.html">Books</a></li>
+                      <li><a href="./404.html">Drink</a></li>
+                      <li><a href="./404.html">Electronics</a></li>
+                      <li><a href="./404.html">Flowers & Plants</a></li>
+                      <li><a href="./404.html">Food</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-col">
+                    <h4><br /></h4>
+                    <ul>
+                      <li><a href="./404.html">Gadgets</a></li>
+                      <li><a href="./404.html">Garden</a></li>
+                      <li><a href="./404.html">Grocery</a></li>
+                      <li><a href="./404.html">Home</a></li>
+                      <li><a href="./404.html">Jewelry</a></li>
+                      <li><a href="./404.html">Kids &amp; Baby</a></li>
+                      <li><a href="./404.html">Men's Fashion</a></li>
+                      <li><a href="./404.html">Mobile</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-col">
+                    <h4><br /></h4>
+                    <ul>
+                      <li><a href="./404.html">Motorcycles</a></li>
+                      <li><a href="./404.html">Movies</a></li>
+                      <li><a href="./404.html">Music</a></li>
+                      <li><a href="./404.html">Office</a></li>
+                      <li><a href="./404.html">Pets</a></li>
+                      <li><a href="./404.html">Romantic</a></li>
+                      <li><a href="./404.html">Sport</a></li>
+                      <li><a href="./404.html">Toys</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-col">
+                    <h4>SALE</h4>
+                    <ul>
+                      <li><a href="./404.html">Accessories</a></li>
+                      <li><a href="./404.html">Alcohol</a></li>
+                      <li><a href="./404.html">Art</a></li>
+                      <li><a href="./404.html">Books</a></li>
+                      <li><a href="./404.html">Drink</a></li>
+                      <li><a href="./404.html">Electronics</a></li>
+                      <li><a href="./404.html">Flowers & Plants</a></li>
+                      <li><a href="./404.html">Food</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-col">
+                    <img src="images/random-image.jpg" alt="" /> 
+                </div>
+              </div>
+            </ul>
+          </li>
+          <!----->   
+
+          <li><a class="header-nav" href="">COMPANY</a></li>
+          <li><a class="header-nav" href="">LIBRARY</a></li>
+          <li><a class="header-nav" href="">CONTACT&nbspUS</a></li>
+          <div >
+            <select class="nav-select">
+              <option value="0">EN</option>
+              <option value="1">FR</option>
+              <option value="2">UA</option>
+              <option value="3">RU</option>
+              <option value="4">DE</option>
+            </select>
+          </div>
+          <div >
+            <select class="nav-select">
+              <option value="0">$&nbsp;US</option>
+              <option value="1">€ Euro</option>
+              <option value="3">£ GBP</option>
+              <option value="2">JPY</option>
+            </select>
+          </div>
+        </ul>
+     
+      </nav>
+     
+      <div class="right-nav">
+        <div class="search-container">
+        <img
+          class="navigation-icon"
+          id="search"
+          src="images/search.jpg"
+          alt="navigation-icon"
+        />
+      </div>
+
+        <div class="user-container">
+        <img class="navigation-icon" id="user" src="images/user.jpg" alt="user" />
+      </div>
+
+        <div class="fav-container">
+        <img
+          class="navigation-icon"
+          src="images/heart.jpg"
+          alt="navigation-icon"    
+        />
+        <div class="counter" id="favourites">0
+        </div>
+      </div>
+
+        <div class="cart-container">
+        <img
+          class="navigation-icon"
+          src="images/bag.jpg"
+          alt="navigation-icon"
+        />
+        <div class="counter" id="cart">0
+          </div>
+        </div>
+        
+      </div>
+     
+    </header>
+    <hr>
+
+<!--***************************************************************************************-->
+    <section class="breadcrumbs">
+      <a href="/index.html">Home</a> <span>/</span> <span>Product Detailed Page</span>
+      <h2>Services</h2>
+    </section>
+    <section class="product-detailed">
+      <div class="wrapper">
+        <div class="background">
+        <div class="container-left">
+          
+          
+            <input type="radio" class="radio" name="thumbnail" id="photo1" Checked="checked">
+            <div class="photo" id="black-front" ><img class="black-front" src="images/black-front.jpg" alt=""></div>
+            <input type="radio" class="radio" name="thumbnail" id="photo2">
+            <div class="photo" id="black-front" ><img class="black-front" src="images/black-back.jpg" alt=""></div>
+            <input type="radio" class="radio" name="thumbnail" id="photo3">
+            <div class="photo" id="black-front" ><img class="black-front" src="images/aqua-front.jpg" alt=""></div>
+            <input type="radio" class="radio" name="thumbnail" id="photo4">
+            <div class="photo" id="black-front" ><img class="black-front" src="images/aqua-back.jpg" alt=""></div>
+            <div class="thumbnails">
+          <label class="thumbnail-label"  for="photo1"><img class="black-front" src="images/black-front-thumbnail.jpg" alt=""></label>
+          <label class="thumbnail-label"  for="photo2"><img class="black-back" src="images/black-back-thumbnail.jpg" alt=""></label>
+          <label class="thumbnail-label" for="photo3"><img class="aqua-front" src="images/aqua-front-thumbnail.jpg" alt=""></label>
+          <label class="thumbnail-label" for="photo4"><img class="aqua-front" src="images/aqua-back-thumbnail.jpg" alt=""></label>
+        
+        </div>
+
+        </div>
+
+        <div class="container-right">
+          <h2>$299.99</h2>
+          
+          <select name="color" class="color">
+            <option value="0"> Dark Gray</option>
+            <option value="1">Blue</option>
+            <option value="2">Black</option>
+            <option value="3">Green</option>
+            <option value="4">Red</option>
+            <option value="5">White</option>
+          </select>
+        
+
+          <div class="cart-buttons">
+            <div class="plus-minus-button">
+              <span class="minus" >-</span>
+              <span class="number" >1</span>
+              <span class="plus" >+</span>
+            </div>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+          <input type="checkbox" id="read-more">
+          <p> Voluptate, quisquam quas est enim iure ullam minima perferendis unde, veritatis magni sapiente earum quibusdam nobis, officiis adipisci! Vitae hic inventore est facere laboriosam ex ipsum quas!</p>
+          <p class="hidden-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur obcaecati expedita in velit earum neque sapiente, nobis ullam consectetur beatae qui fugiat doloribus. Et quam molestias impedit deserunt qui doloribus quisquam, earum quo distinctio enim officiis est facere. Sapiente totam a dicta et soluta commodi. Velit, consequuntur! Itaque, dolore?</p>
+          <label class="read-more-label" for="read-more">Read More</label>
+
+         
+          <div class="product-social" >
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/OSFDigital/"><img src="images/facebook.jpg" alt=""></a>
+              </li>
+              
+              <li><a href="https://osf.io/"><img src="images/google.jpg" alt=""></a></a>
+              </li>
+              <li><a href="https://www.pinterest.com/">
+                <img src="images/pinterest.jpg" alt=""></a>
+              </li>
+              <li><a href="https://twitter.com/osfdigital"><img src="images/twitter.jpg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-tabs">
+          <div class="box">
+            <input type="radio" name="box" id="box1" checked="checked">
+            <label for="box1" class="box-first">Description</label>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur et consectetur adipisicing elit. Magnam ea  adipisicing elit. Suscipit numquam deleniti nisi corrupti qui explicabo nobis ut, consequatur molestiae optio quam a cumque et recusandae illo harum? Fugit, ad a.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in dolore neque, dignissimos illo ab nulla nemo laudantium? Accusamus magnam perferendis nesciunt, maiores quibusdam atque optio provident doloribus possimus praesentium. Incidunt quibusdam quasi corrupti fuga aperiam voluptatem suscipit, quis eligendi.</p>
+          </div>
+
+            <input type="radio" name="box" id="box2" >
+            <label for="box2">Additional Information</label>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam deleniti nisi corrupti qui explicabo nobis ut, consequatur molestiae optio quam a cumque et recusandae illo harum? Fugit, ad a.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ea magni in aspernatur ratione dolorem, vitae architecto incidunt libero distinctio quia, provident, officiis dignissimos quis perferendis recusandae quas placeat? Nesciunt.</p>
+          </div>
+
+            <input type="radio" name="box" id="box3" >
+            <label for="box3">Review</label>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.um dolor sit amet consectetur adipisicing elit. S Suscipit numquam deleniti nisi corrupti qui explicabo nobis ut, consequatur molestiae optio quam a cumque et recusandae illo harum? Fugit, ad a.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugiat dignissimos libero vero. Repellat, nobis.</p>
+          </div>
+          </div>
+        </div>
+
+      </div><!-------------background-->
+
+        <div class="product-header"> <div class="line"></div><h3>POPULAR ITEMS</h3><div class="line"></div></div>
+        <div class="container-products"></div>
+        
+        
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product5.jpg" class="product-thumb" alt="product">
+          </div>
+          <p class="product-short-description">  Kristina Dam Oak Table With White Marble Top </p>
+          <p>$799.55</p> 
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product6.jpg" class="product-thumb" alt="product">
+          </div>
+          <p class="product-short-description">  Activate Facial Mask And Charcoal Soap</p>
+          <p>$2199.55</p> 
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product7.jpg" class="product-thumb" alt="product">
+          </div>
+          <p class="product-short-description">  Kristina Dam Oak Table With White Marble Top</p>
+          <p>$129.55</p> 
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/product8.jpg" class="product-thumb" alt="product">
+          </div>
+          <p class="product-short-description">  Cocktail Table Walnut</p>
+          <p>$123.45</p> 
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+
+<!--***************************************************************************************-->
+   
+    <section class="benefit">
+      <div class="wrapper">
+      <div class="benefit-cards">
+        <img src="images/logistics.jpg" alt="">
+        <div>
+        <h4>FOCUS</h4>
+        <p>
+          Our unwavering focus on superior service delivery and building next generation competencies </p>
+        </div>
+        </div>
+        <div class="benefit-cards">
+          <img src="images/recycle.jpg" alt="">
+          <div>
+          <h4>METHOD</h4>
+        <p>
+          A standardized methodology designed to deliver measurable business results and predictable costs</p>
+        </div>
+        </div>
+        <div class="benefit-cards">
+          <img src="images/checklist.jpg" alt="">
+          <div>
+          <h4>KNOWLEDGE</h4>
+        <p>
+          A highly skilled, proactive workforce that reliably improves each client’s ROI while mitigating their business risk</p>
+        </div>
+        </div>
+      </section>
+  </div>
+    <!--footer start-->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="row">
+          <div class="footer-col" id="contact">
+            <p ><br> © Copyright <p  id="date-year"></p> <br><br>All rights reserved <br></p>
+            <h4>CONTACT</h4>
+            <ul>
+              <li>Headquarters:<br>
+                5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6 </li>
+                <p></p>
+              <li><a href="mailto:contact@osf-global.com">contact@osf-global.com </a> <br></li>
+              <p></p>
+              <li><a href="tel:+1-888-548-4344">+1 (888) 548-4344</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CATEGORIES</h4>
+            <ul>
+              <li><a href="./404.html">Alcohol</a></li>
+              <li><a href="./404.html">Art</a></li>
+              <li><a href="./404.html">Books</a></li>
+              <li><a href="./404.html">Drink</a></li>
+              <li><a href="./404.html">Electronics</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><br></h4>
+            <ul>
+              <li><a href="./404.html">Home</a></li>
+              <li><a href="./404.html">Jewerly</a></li>
+              <li><a href="./404.html">Kids &amp; Baby</a></li>
+              <li><a href="./404.html">Men's Fashion</a></li>
+              <li><a href="./404.html">Mobile</a></li>
+              <li><a href="./404.html">Motorcycles</a></li>
+              <li><a href="./404.html">Movies</a></li>
+              <li><a href="./404.html">Music</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><br></h4>
+            <ul>
+              <li><a href="./404.html">Sport</a></li>
+              <li><a href="./404.html">Toys</a></li>
+              <li><a href="./404.html">Travel</a></li>
+              <li><a href="./404.html">Women's Fashion</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>ABOUT</h4>
+            <ul>
+              <li><a href="./404.html">About Us</a></li>
+              <li><a href="./404.html">Delivery</a></li>
+              <li><a href="./404.html">Testimonials</a></li>
+              <li><a href="./404.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" id="social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/OSFDigital/"><img src="images/facebook.jpg" alt=""></a>
+              </li>
+              
+              <li><a href="https://osf.io/"><img src="images/google.jpg" alt=""></a></a>
+              </li>
+              <li><a href="https://www.pinterest.com/">
+                <img src="images/pinterest.jpg" alt=""></a>
+              </li>
+              <li><a href="https://twitter.com/osfdigital"><img src="images/twitter.jpg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!--footer end-->
+
+     
+     <script src="js/product-detailed-page.js"></script>
+  </body>
 </html>

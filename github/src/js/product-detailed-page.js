@@ -104,26 +104,18 @@ function cartCountUp () {
 }
 
 
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
+const number = document.querySelector(".number");
 
-let cookieModal = document.querySelector(".cookie-consent-modal");
-let exitCookieBtn = document.querySelector(".exit-cookie");
-let acceptCookieBtn = document.querySelector(".accept-cookie");
+let a = 1;
 
-
-exitCookieBtn.addEventListener("click", function(){
-    cookieModal.classList.remove("active")
-})
-
-
-acceptCookieBtn.addEventListener("click", function(){
-    cookieModal.classList.remove("active")
-    localStorage.setItem("cookieAccepted","yes")
-})
-
-setTimeout(function(){
-    let cookieAccepted = localStorage.getItem("cookieAccepted")
-    if(cookieAccepted != "yes"){
-    cookieModal.classList.add("active")
-    }
-},2000)
-
+plus.addEventListener("click", ()=> {
+    a++;
+    number.innerText = a;
+});
+minus.addEventListener("click", ()=> {
+    if(a>0){
+    a--;
+    number.innerText=a;
+}});
