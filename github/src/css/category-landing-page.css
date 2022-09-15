@@ -171,6 +171,19 @@ body {
    margin-top: 2rem;
 
   }
+  
+  .right-nav i {
+    font-size: 25px;
+    margin: 12px;
+    color: rgba(139, 139, 139, 0.644);
+  }
+  .right-nav i:hover {
+    color: #84bc22;
+    cursor: pointer;
+  }
+  .right-nav i:active{
+    color: gray;
+  }
   .navigation-icon {
     margin: 0.5rem 10px 0px 0px;
   }
@@ -523,19 +536,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 25px;
   }
 
-  .buy-now {
+  #buy-now {
     width: 89px;
     height: 34px;
     border: 2px rgb(199, 197, 197) solid;
     border-radius: 0 10px 10px 0;
-    padding: 0;
     background: none;
     cursor: pointer;
     font-size: 13px;
   }
-  .buy-now:hover {
+  #buy-now:hover {
     background: rgb(76, 193 , 117);
     color: white;
     font-weight: bolder;

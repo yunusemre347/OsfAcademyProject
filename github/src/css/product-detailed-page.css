@@ -990,10 +990,8 @@ body {
     color: rgba(201, 200, 200, 0.356);
     background: rgb(37, 42, 51);
   }
-  .circle{
-    width: 20px;
-    height: 20px;
-   background-color: wheat;
+  .select{
+    font-family: 'FontAwesome', 'Arial';
   }
 
   .plus-minus-button{
@@ -1020,6 +1018,7 @@ body {
     color: rgb(201, 200, 200);
 
   }
+
 
 
   .add-to-cart {

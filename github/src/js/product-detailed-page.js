@@ -104,18 +104,19 @@ function cartCountUp () {
 }
 
 
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
-const number = document.querySelector(".number");
 
-let a = 1;
+function totalClick(click) {
+    const totalClicks = document.getElementById('totalClicks');
+    const sumValue = parseInt(totalClicks.innerText)+ click;
+    console.log(sumValue + click);
+    totalClicks.innerText = sumValue;
 
-plus.addEventListener("click", ()=> {
-    a++;
-    number.innerText = a;
-});
-minus.addEventListener("click", ()=> {
-    if(a>0){
-    a--;
-    number.innerText=a;
-}});
+    //avoid negative
+
+    if(sumValue<0){
+        totalClicks.innerText = 0;
+    }
+
+}
+
+let addToCart=document.getElementById('add-to-cart');

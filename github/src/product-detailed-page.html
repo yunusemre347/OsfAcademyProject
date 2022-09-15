@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="/css/product-detailed-page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -180,7 +181,7 @@
           <h2>$299.99</h2>
           
           <select name="color" class="color">
-            <option value="0"> Dark Gray</option>
+            <option value="0">  Dark Gray</option>
             <option value="1">Blue</option>
             <option value="2">Black</option>
             <option value="3">Green</option>
@@ -191,14 +192,15 @@
 
           <div class="cart-buttons">
             <div class="plus-minus-button">
-              <span class="minus" >-</span>
-              <span class="number" >1</span>
-              <span class="plus" >+</span>
+              <button onclick="totalClick(-1)" class="minus" >-</button>
+              <span class="number" id="totalClicks" >1</span>
+              <button onclick="totalClick(1)" class="plus" >+</button>
             </div>
-          <button class="add-to-cart">ADD TO CART</button>
+          <button  id="add-to-cart" class="add-to-cart">ADD TO CART</button>
         </div>
 
           <input type="checkbox" id="read-more">
+          
           <p> Voluptate, quisquam quas est enim iure ullam minima perferendis unde, veritatis magni sapiente earum quibusdam nobis, officiis adipisci! Vitae hic inventore est facere laboriosam ex ipsum quas!</p>
           <p class="hidden-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur obcaecati expedita in velit earum neque sapiente, nobis ullam consectetur beatae qui fugiat doloribus. Et quam molestias impedit deserunt qui doloribus quisquam, earum quo distinctio enim officiis est facere. Sapiente totam a dicta et soluta commodi. Velit, consequuntur! Itaque, dolore?</p>
           <label class="read-more-label" for="read-more">Read More</label>

@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osf Academy Project</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <header>
+      <div class="mobile-menu">
+        <a  href="#" class="toggle-menu"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      
+
      <a class="logo-link" href="index.html"><img class="logo" src="/images/logo.jpg" alt="company logo" /> </a> 
-      <div class="container">
+      <div class="logo-house">
         <h1>OSF</h1>
         <h2>Academy</h2>
       </div>
@@ -110,41 +116,94 @@
      
       <div class="right-nav">
         <div class="search-container">
-        <img
-          class="navigation-icon"
-          id="search"
-          src="images/search.jpg"
-          alt="navigation-icon"
-        />
+          <i class="fa-solid fa-magnifying-glass"></i>
+      
       </div>
 
-        <div class="user-container">
-        <img class="navigation-icon" id="user" src="images/user.jpg" alt="user" />
+        <div  class="user-container">
+          <i class="fa-regular fa-user"></i>
+       
       </div>
 
         <div class="fav-container">
-        <img
-          class="navigation-icon"
-          src="images/heart.jpg"
-          alt="navigation-icon"    
-        />
+          <i class="fa-regular fa-heart"></i>
+    
         <div class="counter" id="favourites">0
         </div>
       </div>
 
         <div class="cart-container">
-        <img
-          class="navigation-icon"
-          src="images/bag.jpg"
-          alt="navigation-icon"
-        />
+          <i class="fa-solid fa-bag-shopping"></i>
+      
         <div class="counter" id="cart">0
           </div>
         </div>
         
       </div>
+      <div class="mobile-dropdown-menu ">
+        <ul>
+         <li><a href="#" class="services-toggle-button" >SERVICES<span class="arrow-down">▼</span></a>
+          
+           <ul>
+             <li class="product-categories"><a href="#" >Product Categories<span class="arrow-down">▼</span></a>
+              <div class="sub-product">
+                <ul>
+                  <li><a href="./404.html">Accessories</a></li>
+                  <li><a href="./404.html">Alcohol</a></li>
+                  <li><a href="./404.html">Art</a></li>
+                  <li><a href="./404.html">Books</a></li>
+                  <li><a href="./404.html">Drink</a></li>
+                  <li><a href="./404.html">Electronics</a></li>
+                  <li><a href="./404.html">Flowers & Plants</a></li>
+                  <li><a href="./404.html">Food</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./404.html">Gadgets</a></li>
+                  <li><a href="./404.html">Garden</a></li>
+                  <li><a href="./404.html">Grocery</a></li>
+                  <li><a href="./404.html">Home</a></li>
+                  <li><a href="./404.html">Jewelry</a></li>
+                  <li><a href="./404.html">Kids &amp; Baby</a></li>
+                  <li><a href="./404.html">Men's Fashion</a></li>
+                  <li><a href="./404.html">Mobile</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./404.html">Motorcycles</a></li>
+                  <li><a href="./404.html">Movies</a></li>
+                  <li><a href="./404.html">Music</a></li>
+                  <li><a href="./404.html">Office</a></li>
+                  <li><a href="./404.html">Pets</a></li>
+                  <li><a href="./404.html">Romantic</a></li>
+                  <li><a href="./404.html">Sport</a></li>
+                  <li><a href="./404.html">Toys</a></li>
+                </ul>
+              </div>
+            </li>
+            
+             <li class="sale"><a href="#">Sale<span class="arrow-down">▼</span></a>
+             <div class="sub-sale">
+              <ul>
+              <li><a href="./404.html">Accessories</a></li>
+              <li><a href="./404.html">Alcohol</a></li>
+              <li><a href="./404.html">Art</a></li>
+              <li><a href="./404.html">Books</a></li>
+              <li><a href="./404.html">Drink</a></li>
+              <li><a href="./404.html">Electronics</a></li>
+              <li><a href="./404.html">Flowers & Plants</a></li>
+              <li><a href="./404.html">Food</a></li>
+             </ul>
+            </div>
+            </li>
+           </ul>
+         </li>
+         <li><h2>COMPANY</h2></li>
+         <li><h2>LIBRARY</h2></li>
+         <li><h2>CONTACT US</h2></li>
+        </ul>
+       </div>
      
     </header>
+
     <hr>
     <section class="greeting">
       <!--slider start-->
@@ -167,7 +226,7 @@
           </div>
            
            </div>
-           <div class="slide ">
+           <div class="slide " id="slide2">
             <img src="images/slider2.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
@@ -175,7 +234,7 @@
             <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
           </div>
            </div>
-           <div class="slide ">
+           <div class="slide " id="slide3">
             <img src="images/slider3.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
@@ -183,7 +242,7 @@
             <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
           </div>
            </div>
-           <div class="slide ">
+           <div class="slide " id="slide4">
             <img src="images/slider1.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
@@ -191,7 +250,7 @@
             <a href="category-landing-page.html"><button class="view-more-slider">view more</button></a>
           </div>
            </div>
-           <div class="slide ">
+           <div class="slide " id="slide5">
             <img src="images/slider2.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
@@ -230,8 +289,8 @@
         <div class="main-product-image">
           <img src="images/product1.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description">  Kristina Dam Oak Table With White Marble Top  </p>
+        <p class="price">$ 799.55</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -248,7 +307,7 @@
         <div class="main-product-image">
           <a class="product-detailed-link" href="/product-detailed-page.html"><img src="images/product3.jpg"  alt="product"></a>
         </div>
-        <p class="main-product-short-description">  description to be written </p>
+        <p class="main-product-short-description">  Hay - About A Lounge <br> Chair AAL 93 </p>
         <div class="second-card-price-bar">
           <div class="price-tag">$659.55</div> <button class="cart-button" id="buy-now">BUY NOW</button>
         </div>
@@ -258,8 +317,8 @@
         <div class="main-product-image">
           <img src="images/product2.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description"> Activate Facial Mask and <br> Charcoal Soap </p>
+        <p class="price">$ 199.55</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -275,8 +334,8 @@
         <div class="main-product-image">
           <img src="images/product4.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description">  Cocktail Table Walnut <br> YES </p>
+        <p class="price">$ 299.99</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -292,8 +351,8 @@
         <div class="main-product-image">
           <img src="images/product5.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description">   Hay - About A Lounge Chair AAL 93 </p>
+        <p class="price">$ 659.55</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -309,8 +368,8 @@
         <div class="main-product-image">
           <img src="images/product6.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description">  Kristina Dam Oak Table With White Marble Top  </p>
+        <p class="price">$ 799.55</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -325,8 +384,8 @@
         <div class="main-product-image">
           <img src="images/product7.jpg"  alt="product">
         </div>
-        <p class="main-product-short-description">  description to be written </p>
-        <p class="price">$ price</p> 
+        <p class="main-product-short-description"> Hay - About A Lounge <br> Chair AAL 93 </p>
+        <p class="price">$ 159.52</p> 
         <div class="overlay">
           <div class="cart-button">
             <img src="/images/plus.jpg" alt="plus">
@@ -387,7 +446,7 @@
         <div class="product-image">
           <img src="images/product1.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description">  description to be written </p>
+        <p class="product-short-description">   Hay - About A Lounge <br> Chair AAL 93  </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -395,7 +454,7 @@
         <div class="product-image">
           <img src="images/product2.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Kristina Dam Oak Table With White Marble Top  </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -403,7 +462,7 @@
         <div class="product-image">
           <img src="images/product3.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Cocktail Table Walnut YES  </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -412,7 +471,7 @@
         <div class="product-image">
           <img src="images/product4.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Activate Facial Mask and Charcoal Soap </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -420,7 +479,7 @@
         <div class="product-image">
           <img src="images/product5.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> TORY DESK CALENDAR </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -428,7 +487,7 @@
         <div class="product-image">
           <img src="images/product6.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Cocktail Table Walnut YES </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -437,7 +496,7 @@
         <div class="product-image">
           <img src="images/product7.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written</p>
+        <p class="product-short-description"> Activate Facial Mask and Charcoal Soap</p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -446,7 +505,7 @@
         <div class="product-image">
           <img src="images/product8.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Kristina Dam Oak Table With White Marble Top</p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -455,7 +514,7 @@
         <div class="product-image">
           <img src="images/product9.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Cocktail Table Walnut YES  </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -464,7 +523,7 @@
         <div class="product-image">
           <img src="images/product10.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Hay About A Lounge Chair AAL 93 </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -472,7 +531,7 @@
         <div class="product-image">
           <img src="images/product11.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> Activate Facial Mask and Charcoal Soap </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -480,7 +539,7 @@
         <div class="product-image">
           <img src="images/product12.jpg" class="product-thumb" alt="product">
         </div>
-        <p class="product-short-description"> description to be written </p>
+        <p class="product-short-description"> TORY DESK CALENDAR </p>
         <a href="#" class="awesome-link">awesome</a> <!--bu kod 2. sectiondaki görevin aynısını yapacak. kart urun sayısı +1 yapacak-->
       </div>
 
@@ -604,9 +663,39 @@
             
         <button class="accept-cookie">ACCEPT</button>
         <button class="exit-cookie"><img src="/images/exit.jpg" alt=""></button>
-      </div >
-          
-          
+      </div >    
+    </div>
+
+    
+    <div class="login-modal" >
+      <div class="login">
+        <form action="/">
+        <h2>Sign in</h2>
+        <div class="password-line"> <span>E-mail</span></div>
+       
+       <div class="password-container">
+        <input class="login-bar"  type="email" name="user" placeholder="E-mail" required>
+        
+      </div>
+
+        <div class="password-line">
+           <span class="password-text">Password</span> <span class="forgot-text">forgot password?</span>
+        </div>
+       
+        <div class="password-container">
+        <input required class="password-bar" type="password" name="password" placeholder="Password" id="password" >
+        <span class="eye" onclick="eyeFunction()">
+        <i id="hide1" class="fa-solid fa-eye"></i>
+        <i id="hide2" class="fa-solid fa-eye-slash"></i>
+      </span>
+    </div>
+            <div class="login-button-container">
+        <input type="submit" class="login-button" value="LOGIN"></input>
+        <p class="forgot-text">I dont have an account</p>
+      </div>
+       
+    </form>
+      </div >    
     </div>
      
      <script src="js/script.js"></script>
