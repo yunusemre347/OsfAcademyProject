@@ -218,7 +218,8 @@
            <!--radio buttons end-->
            <!--slide images start-->
            <div class="slide first">
-            <img src="images/slider1.jpg" alt="">
+            <img class="big-slider-images" src="images/slider1.jpg" alt="">
+            <img class="mobile-slider-images" src="images/mobileslider1.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
             <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
@@ -227,7 +228,8 @@
            
            </div>
            <div class="slide " id="slide2">
-            <img src="images/slider2.jpg" alt="">
+            <img class="big-slider-images" src="images/slider2.jpg" alt="">
+            <img class="mobile-slider-images" src="images/mobileslider2.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
             <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
@@ -235,7 +237,8 @@
           </div>
            </div>
            <div class="slide " id="slide3">
-            <img src="images/slider3.jpg" alt="">
+            <img class="big-slider-images" src="images/slider3.jpg" alt="">
+            <img class="mobile-slider-images" src="images/mobileslider3.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
             <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
@@ -243,7 +246,8 @@
           </div>
            </div>
            <div class="slide " id="slide4">
-            <img src="images/slider1.jpg" alt="">
+            <img class="big-slider-images" src="images/slider1.jpg" alt="">
+            <img class="mobile-slider-images" src="images/mobileslider1.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
             <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
@@ -251,7 +255,8 @@
           </div>
            </div>
            <div class="slide " id="slide5">
-            <img src="images/slider2.jpg" alt="">
+            <img class="big-slider-images" src="images/slider2.jpg" alt="">
+            <img class="mobile-slider-images" src="images/mobileslider2.jpg" alt="">
             <div class="slider-text">
             <h3>Control and manage any <br> device with cloud solutions</h3>
             <p><br> Improve business performance and the user experience <br> with the right mix of IoT technology and processes</p>
@@ -410,9 +415,14 @@
       </div>
       
     </div>
-    <div id="load-more-container">
+
+    <div class="wrapper" id="load-more-container">
+    <!-- <button  id="load-more-btn">load more</button> -->
+   </div>
+   <div class="wrapper" >
     <button  id="load-more-btn">load more</button>
    </div>
+  
   
    </section>
    
@@ -435,15 +445,16 @@
   <button class="nxt-btn"><img src="/images/right-button.jpg" alt=""></button>
 </div>
 
+<div class="product-background">
 <section class="product">
-  
+  <div class="product-background"></div>
   
    
     <div class="product-container">
 
 
-      <div class="product-card">
-        <div class="product-image">
+      <div class="product-card ">
+        <div class="product-image ">
           <img src="images/product1.jpg" class="product-thumb" alt="product">
         </div>
         <p class="product-short-description">   Hay - About A Lounge <br> Chair AAL 93  </p>
@@ -546,7 +557,7 @@
     </div>
  
 </section>
-
+</div>
 
 <!--   featured products  end-->
    
@@ -560,9 +571,9 @@
           Our unwavering focus on superior service delivery and building next generation competencies </p>
         </div>
         </div>
-        <div class="benefit-cards">
-          <img src="images/recycle.jpg" alt="">
-          <div>
+        <div class="benefit-cards" id="second-benefit-card">
+          <img id="second-benefit-a" src="images/recycle.jpg" alt="">
+          <div id="second-benefit-b">
           <h4>METHOD</h4>
         <p>
           A standardized methodology designed to deliver measurable business results and predictable costs</p>
@@ -583,7 +594,7 @@
       <div class="wrapper">
         <div class="row">
           <div class="footer-col" id="contact">
-            <p ><br> © Copyright <p  id="date-year"></p> <br><br>All rights reserved <br></p>
+            <p ><br> © Copyright <p  id="date-year"></p> <br>All rights reserved </p>
             <h4>CONTACT</h4>
             <ul>
               <li>Headquarters:<br>
@@ -674,7 +685,7 @@
         <div class="password-line"> <span>E-mail</span></div>
        
        <div class="password-container">
-        <input class="login-bar"  type="email" name="user" placeholder="E-mail" required>
+        <input title="Please enter a valid e-mail address" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}" class="login-bar"  type="email" name="user" placeholder="E-mail" required>
         
       </div>
 
@@ -683,7 +694,7 @@
         </div>
        
         <div class="password-container">
-        <input required class="password-bar" type="password" name="password" placeholder="Password" id="password" >
+        <input title="“At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{6,})" required class="password-bar" type="password" name="password" placeholder="Password" id="password" >
         <span class="eye" onclick="eyeFunction()">
         <i id="hide1" class="fa-solid fa-eye"></i>
         <i id="hide2" class="fa-solid fa-eye-slash"></i>

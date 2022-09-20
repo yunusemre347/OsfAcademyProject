@@ -108,33 +108,6 @@ startSlide();
 
 
 
-
-//eski kod
-// productContainer.forEach((item, i) => {//eski kod
-//   let containerDimensions = item.getBoundingClientRect();
-//   let containerWidth = containerDimensions.width;
-
-//   nxtBtn[i].addEventListener("click", () => {
-//     item.scrollLeft += containerWidth;
- 
-//   });
-
-//   preBtn[i].addEventListener("click", () => {
-//     item.scrollLeft -= containerWidth;
-//   });
-//   function next() {
-//     item.scrollLeft += containerWidth;
-//   }
-//   function autoScroll(){
-//     next();
-//     setTimeout(autoScroll,5000);
-//   }
-//   autoScroll();
-// });
-//eski kod bitimi
-
-
-
 const dateYear = new Date();
 document.getElementById("date-year").innerHTML = dateYear.getFullYear();
 
@@ -158,12 +131,7 @@ let pageCounter = 1;
 
 btn.addEventListener("click", function () {
   let ourRequest = new XMLHttpRequest();
-  if(pageCounter===1){
   ourRequest.open("GET", "https://yunusemre347.github.io/osfjson/db.json");
-  }
-  if(pageCounter===2){
-    ourRequest.open("GET", "https://yunusemre347.github.io/osfjson/dataSecond.json")
-  }
   ourRequest.onload = function () {
     let ourData = JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
@@ -188,14 +156,10 @@ function renderHTML(data) {
 
   loadMoreContainer.insertAdjacentHTML("beforeend", htmlString);
 
-  if (pageCounter > 2) {
+  if (pageCounter > 1) {
     btn.classList.add("hide-me");
   }
 }
-
-
-
-
 
 let favCountBtn = document.querySelectorAll(".favourite-button");
 let favCountNum = document.getElementById("favourites");

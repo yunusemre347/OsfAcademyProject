@@ -1,0 +1,22 @@
+[
+    {
+      "images": "product1.jpg",
+      "description": "Hay - About A Lounge ",
+      "price": "5047.34"
+    },
+    {
+      "images": "product5.jpg",
+      "description": " Kristina Dam Oak Table With White Marble Top",
+      "price": "789.34"
+    },
+    {
+      "images": "product3.jpg",
+      "description": "Charcoal Soap",
+      "price": "66.14"
+    },
+    {
+      "images": "product7.jpg",
+      "description": "Some Random Product NAME",
+      "price": "750.51"
+    }
+  ]

@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
+   
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/product-detailed-page.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+ 
+
+    
   </head>
   <body>
     <header>
+      <div class="mobile-menu">
+        <a  href="#" class="toggle-menu"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      
+
      <a class="logo-link" href="index.html"><img class="logo" src="/images/logo.jpg" alt="company logo" /> </a> 
-      <div class="container">
+      <div class="logo-house">
         <h1>OSF</h1>
         <h2>Academy</h2>
       </div>
@@ -111,39 +121,91 @@
      
       <div class="right-nav">
         <div class="search-container">
-        <img
-          class="navigation-icon"
-          id="search"
-          src="images/search.jpg"
-          alt="navigation-icon"
-        />
+          <i class="fa-solid fa-magnifying-glass"></i>
+      
       </div>
 
-        <div class="user-container">
-        <img class="navigation-icon" id="user" src="images/user.jpg" alt="user" />
+        <div  class="user-container">
+          <i class="fa-regular fa-user"></i>
+       
       </div>
 
         <div class="fav-container">
-        <img
-          class="navigation-icon"
-          src="images/heart.jpg"
-          alt="navigation-icon"    
-        />
+          <i class="fa-regular fa-heart"></i>
+    
         <div class="counter" id="favourites">0
         </div>
       </div>
 
         <div class="cart-container">
-        <img
-          class="navigation-icon"
-          src="images/bag.jpg"
-          alt="navigation-icon"
-        />
+          <i class="fa-solid fa-bag-shopping"></i>
+      
         <div class="counter" id="cart">0
           </div>
         </div>
         
       </div>
+      <div class="mobile-dropdown-menu ">
+        <ul>
+         <li><a href="#" class="services-toggle-button" >SERVICES<span class="arrow-down">▼</span></a>
+          
+           <ul>
+             <li class="product-categories"><a href="#" >Product Categories<span class="arrow-down">▼</span></a>
+              <div class="sub-product">
+                <ul>
+                  <li><a href="./404.html">Accessories</a></li>
+                  <li><a href="./404.html">Alcohol</a></li>
+                  <li><a href="./404.html">Art</a></li>
+                  <li><a href="./404.html">Books</a></li>
+                  <li><a href="./404.html">Drink</a></li>
+                  <li><a href="./404.html">Electronics</a></li>
+                  <li><a href="./404.html">Flowers & Plants</a></li>
+                  <li><a href="./404.html">Food</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./404.html">Gadgets</a></li>
+                  <li><a href="./404.html">Garden</a></li>
+                  <li><a href="./404.html">Grocery</a></li>
+                  <li><a href="./404.html">Home</a></li>
+                  <li><a href="./404.html">Jewelry</a></li>
+                  <li><a href="./404.html">Kids &amp; Baby</a></li>
+                  <li><a href="./404.html">Men's Fashion</a></li>
+                  <li><a href="./404.html">Mobile</a></li>
+                </ul>
+                <ul>
+                  <li><a href="./404.html">Motorcycles</a></li>
+                  <li><a href="./404.html">Movies</a></li>
+                  <li><a href="./404.html">Music</a></li>
+                  <li><a href="./404.html">Office</a></li>
+                  <li><a href="./404.html">Pets</a></li>
+                  <li><a href="./404.html">Romantic</a></li>
+                  <li><a href="./404.html">Sport</a></li>
+                  <li><a href="./404.html">Toys</a></li>
+                </ul>
+              </div>
+            </li>
+            
+             <li class="sale"><a href="#">Sale<span class="arrow-down">▼</span></a>
+             <div class="sub-sale">
+              <ul>
+              <li><a href="./404.html">Accessories</a></li>
+              <li><a href="./404.html">Alcohol</a></li>
+              <li><a href="./404.html">Art</a></li>
+              <li><a href="./404.html">Books</a></li>
+              <li><a href="./404.html">Drink</a></li>
+              <li><a href="./404.html">Electronics</a></li>
+              <li><a href="./404.html">Flowers & Plants</a></li>
+              <li><a href="./404.html">Food</a></li>
+             </ul>
+            </div>
+            </li>
+           </ul>
+         </li>
+         <li><h2>COMPANY</h2></li>
+         <li><h2>LIBRARY</h2></li>
+         <li><h2>CONTACT US</h2></li>
+        </ul>
+       </div>
      
     </header>
     <hr>
@@ -160,13 +222,13 @@
           
           
             <input type="radio" class="radio" name="thumbnail" id="photo1" Checked="checked">
-            <div class="photo" id="black-front" ><img class="black-front" src="images/black-front.jpg" alt=""></div>
+            <div class="photo" id="black-front" ><div class="zoom-div"><i class="fa-solid fa-maximize" id="zoom"></i></div><img class="black-front" src="images/black-front.jpg" alt=""></div>
             <input type="radio" class="radio" name="thumbnail" id="photo2">
-            <div class="photo" id="black-front" ><img class="black-front" src="images/black-back.jpg" alt=""></div>
+            <div class="photo" id="black-front" ><div class="zoom-div"><i class="fa-solid fa-maximize" id="zoom"></i></div><img class="black-front" src="images/black-back.jpg" alt=""></div>
             <input type="radio" class="radio" name="thumbnail" id="photo3">
-            <div class="photo" id="black-front" ><img class="black-front" src="images/aqua-front.jpg" alt=""></div>
+            <div class="photo" id="black-front" ><div class="zoom-div"><i class="fa-solid fa-maximize" id="zoom"></i></div><img class="black-front" src="images/aqua-front.jpg" alt=""></div>
             <input type="radio" class="radio" name="thumbnail" id="photo4">
-            <div class="photo" id="black-front" ><img class="black-front" src="images/aqua-back.jpg" alt=""></div>
+            <div class="photo" id="black-front" ><div class="zoom-div"><i class="fa-solid fa-maximize" id="zoom"></i></div><img class="black-front" src="images/aqua-back.jpg" alt=""></div>
             <div class="thumbnails">
           <label class="thumbnail-label"  for="photo1"><img class="black-front" src="images/black-front-thumbnail.jpg" alt=""></label>
           <label class="thumbnail-label"  for="photo2"><img class="black-back" src="images/black-back-thumbnail.jpg" alt=""></label>
@@ -207,6 +269,7 @@
 
          
           <div class="product-social" >
+            <div onclick="printer()" class="print-page">Share</div>
             <ul>
               <li>
                 <a href="https://www.facebook.com/OSFDigital/"><img src="images/facebook.jpg" alt=""></a>
@@ -251,37 +314,75 @@
       </div><!-------------background-->
 
         <div class="product-header"> <div class="line"></div><h3>POPULAR ITEMS</h3><div class="line"></div></div>
-        <div class="container-products"></div>
+        <div class="wrapper">
         
         
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/product5.jpg" class="product-thumb" alt="product">
+          <div class="main-product-card">
+            <div class="main-product-image">
+              <img src="images/product4.jpg"  alt="product">
+            </div>
+            <p class="main-product-short-description">  Cocktail Table Walnut YES </p>
+            <p class="price">$ 299.99</p> 
+            <div class="overlay">
+              <div class="cart-button">
+                <img src="/images/plus.jpg" alt="plus">
+              </div>
+              <div class="favourite-button">
+                <img src="/images/red-heart.jpg" alt="heart">
+              </div>
+              
+            </div>
           </div>
-          <p class="product-short-description">  Kristina Dam Oak Table With White Marble Top </p>
-          <p>$799.55</p> 
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/product6.jpg" class="product-thumb" alt="product">
+          
+          <div class="main-product-card">
+            <div class="main-product-image">
+              <img src="images/product5.jpg"  alt="product">
+            </div>
+            <p class="main-product-short-description">   Hay - About A Lounge Chair AAL 93 </p>
+            <p class="price">$ 659.55</p> 
+            <div class="overlay">
+              <div class="cart-button">
+                <img src="/images/plus.jpg" alt="plus">
+              </div>
+              <div class="favourite-button">
+                <img src="/images/red-heart.jpg" alt="heart">
+              </div>
+              
+            </div>
           </div>
-          <p class="product-short-description">  Activate Facial Mask And Charcoal Soap</p>
-          <p>$2199.55</p> 
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/product7.jpg" class="product-thumb" alt="product">
+          
+          <div class="main-product-card">
+            <div class="main-product-image">
+              <img src="images/product6.jpg"  alt="product">
+            </div>
+            <p class="main-product-short-description">  Kristina Dam Oak Table With White Marble Top  </p>
+            <p class="price">$ 799.55</p> 
+            <div class="overlay">
+              <div class="cart-button">
+                <img src="/images/plus.jpg" alt="plus">
+              </div>
+              <div class="favourite-button">
+                <img src="/images/red-heart.jpg" alt="heart">
+              </div>
+            </div>
           </div>
-          <p class="product-short-description">  Kristina Dam Oak Table With White Marble Top</p>
-          <p>$129.55</p> 
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/product8.jpg" class="product-thumb" alt="product">
+          
+          <div class="main-product-card">
+            <div class="main-product-image">
+              <img src="images/product7.jpg"  alt="product">
+            </div>
+            <p class="main-product-short-description"> Hay - About A Lounge <br> Chair AAL 93 </p>
+            <p class="price">$ price</p> 
+            <div class="overlay">
+              <div class="cart-button">
+                <img src="/images/plus.jpg" alt="plus">
+              </div>
+              <div class="favourite-button">
+                <img src="/images/red-heart.jpg" alt="heart">
+              </div>
+            </div>
           </div>
-          <p class="product-short-description">  Cocktail Table Walnut</p>
-          <p>$123.45</p> 
-        </div>
+      </div>
 
 
 
@@ -326,7 +427,7 @@
       <div class="wrapper">
         <div class="row">
           <div class="footer-col" id="contact">
-            <p ><br> © Copyright <p  id="date-year"></p> <br><br>All rights reserved <br></p>
+            <p ><br> © Copyright <p  id="date-year"></p> <br>All rights reserved </p>
             <h4>CONTACT</h4>
             <ul>
               <li>Headquarters:<br>
@@ -398,7 +499,69 @@
     </footer>
      <!--footer end-->
 
+    <div class="cookie-consent-modal" >
+      <div class="content">
+        <h2>This website uses cookies</h2>
+        <p>OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance <br> and interaction with social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use. <br> You can expand this information consulting our     <span class="policy">Cookies Policy Page</span></p>
+   
+            
+        <button class="accept-cookie">ACCEPT</button>
+        <button class="exit-cookie"><img src="/images/exit.jpg" alt=""></button>
+      </div >    
+    </div>
+
+    
+    <div class="login-modal" >
+      <div class="login">
+        <form action="/">
+        <h2>Sign in</h2>
+        <div class="password-line"> <span>E-mail</span></div>
+       
+       <div class="password-container">
+        <input class="login-bar"  type="email" name="user" placeholder="E-mail" required>
+        
+      </div>
+
+        <div class="password-line">
+           <span class="password-text">Password</span> <span class="forgot-text">forgot password?</span>
+        </div>
+       
+        <div class="password-container">
+        <input required class="password-bar" type="password" name="password" placeholder="Password" id="password" >
+        <span class="eye" onclick="eyeFunction()">
+        <i id="hide1" class="fa-solid fa-eye"></i>
+        <i id="hide2" class="fa-solid fa-eye-slash"></i>
+      </span>
+    </div>
+            <div class="login-button-container">
+        <input type="submit" class="login-button" value="LOGIN"></input>
+        <p class="forgot-text">I dont have an account</p>
+      </div>
+       
+    </form>
+      </div >    
+    </div>
+
+
+    <div class="zoom-overlay " id="black-front-overlay ">
+      <div class="zoom-image"><img src="/images/black-front.jpg" alt=""></div>
+      
+    </div>
+    <div class="zoom-overlay" id="black-back-overlay">
+      <img  src="/images/black-back.jpg" alt="">
+    </div>
+    <div class="zoom-overlay " id="aqua-front-overlay">
+      <img src="/images/aqua-front.jpg" alt="">
+    </div>
+    <div class="zoom-overlay" id="aqua-back-overlay">
+      <div class="zoom-image"><img  src="/images/aqua-back.jpg" alt=""></div>
+      
+    </div>
      
+
+
+
+
      <script src="js/product-detailed-page.js"></script>
   </body>
 </html>
