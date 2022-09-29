@@ -131,3 +131,88 @@ prdctCtgr.addEventListener("click", () => {
 sale.addEventListener("click", () => {
   saleSubProduct.classList.toggle("active");
 });
+
+
+
+// let productTwoQuantity=document.getElementById('product-two-quantity');
+const productPriceTwo=document.getElementById('product-price-two');
+const productPriceOne=document.getElementById('product-price-one');
+let itemCostOne=document.querySelector('.item-cost-one');
+let itemCostTwo=document.querySelector('.item-cost-two');
+let productTwoQuantity = document.getElementById('product-two-quantity');
+let productOneQuantity = document.getElementById('product-one-quantity');
+const calcButton=document.querySelector('.plus-minus-button');
+const cartSubTotal=document.querySelector('.cart-subtotal');
+const removeItemOne=document.querySelector('.remove-item-one');
+const removeItemTwo=document.querySelector('.remove-item-two');
+const cartProduct=document.querySelectorAll('.cart-product');
+
+
+
+
+let totalSum=document.querySelector('.order-total');
+let cartRadioButtons=document.querySelectorAll("input[name='shipping']");
+let shippingCost;
+
+let findSelected= () => {
+  let selected = document.querySelector("input[name='shipping']:checked").value;
+ 
+  totalSum.innerText= parseFloat(cartSubTotal.innerText)+parseFloat(selected);
+  console.log(selected);
+
+}
+ cartRadioButtons.forEach(radioBtn=>{
+ radioBtn.addEventListener("change", findSelected);
+ });
+
+
+
+function productOneCounter(click) {
+  const productOneQuantity = document.getElementById('product-one-quantity');
+  const sumValue = parseInt(productOneQuantity.innerText)+ click;
+ 
+  productOneQuantity.innerText = sumValue;
+ 
+
+  //avoid negative
+
+  if(sumValue<1){
+    productOneQuantity.innerText = 1;
+  }
+
+  itemCostOne.innerText=parseFloat(productOneQuantity.innerText)*parseFloat(productPriceOne.innerText);
+  cartSubTotal.innerText=parseFloat(itemCostOne.innerText)+parseFloat(itemCostTwo.innerText);
+  findSelected();
+}
+
+function productTwoCounter(click) {
+  const productTwoQuantity = document.getElementById('product-two-quantity');
+  const sumValue = parseInt(productTwoQuantity.innerText)+ click;
+
+  productTwoQuantity.innerText = sumValue;
+
+  //avoid negative
+
+  if(sumValue<1){
+    productTwoQuantity.innerText = 1;
+  }
+
+  itemCostTwo.innerText=parseFloat(productTwoQuantity.innerText)*parseFloat(productPriceTwo.innerText);
+  cartSubTotal.innerText=parseFloat(itemCostOne.innerText)+parseFloat(itemCostTwo.innerText);
+  findSelected();
+}
+
+removeItemOne.addEventListener('click',function(){
+ cartProduct[0].classList.add('hide');
+ itemCostOne.innerText=0;
+ cartSubTotal.innerText=parseFloat(itemCostOne.innerText)+parseFloat(itemCostTwo.innerText);
+ findSelected();
+})
+
+removeItemTwo.addEventListener('click',function(){
+  cartProduct[1].classList.add('hide');
+  itemCostTwo.innerText=0;
+  cartSubTotal.innerText=parseFloat(itemCostOne.innerText)+parseFloat(itemCostTwo.innerText);
+  findSelected();
+ })
+ 
