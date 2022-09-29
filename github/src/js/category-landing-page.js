@@ -222,6 +222,7 @@ function eyeFunction() {
 let user = document.querySelector(".user-container");
 let login = document.querySelector(".login-modal");
 let lgnBtn = document.querySelector("login-button");
+// let lgnContainer=document.querySelector(".login");
 
 function signIn() {
   login.classList.add("active");
@@ -231,8 +232,14 @@ function hideLogin() {
   login.classList.remove("active");
 }
 
+ login.addEventListener('click',function(event) {
+   if(event.target.closest('.login'))return
+   login.classList.remove('active')
+  });
+
 user.addEventListener("click", signIn);
 // lgnBtn.addEventListener("click",hideLogin);
+
 
 const toggleMenu = document.getElementsByClassName("toggle-menu")[0];
 const mobileMenu = document.getElementsByClassName("mobile-dropdown-menu")[0];
