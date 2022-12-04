@@ -10,4 +10,4 @@ so it lacks full responsiveness and behave faulty in different screen sizes.
 It also doesnt work well in google chrome but works perfectly in every other browser(firefox, opera...)(tbh idk why.)
 
 
-yunusemre347@gmail.com
+yunusemreyilmaz347@gmail.com
